@@ -1,6 +1,4 @@
 .avatar {
-  float: right;
-  margin-top: 200px;
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -11,25 +9,49 @@
   align-items: center;
   margin: 20px;
   width: inherit;
-  height: 700px;
+  height: initial;
   border-radius: 10px;
 }
 .profile_text{
   font-size: 20px ;
+  width: 60%;
   color: rgb(46, 239, 223);
-  align-items: center;
-  margin: auto;
-  float: left;
+  padding: 40px;
+  display: inline;
 }
-
+.profile{
+  margin: auto;
+  width: 45%;
+  padding: 200px 0px;
+  align-items: center;
+  display: flex;
+  column-gap: 60px;
+  flex-wrap: wrap;
+}
+.profile_pic{
+  padding: 20px;
+}
 body{
   background-color: rgb(61, 60, 60);
 }
-.prfile_page1{
-  width: 45%;
-  float: left;
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:inherit;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+ }
+ .resume{
+  border: 1px solid #0075f6;
+  color: rgb(39, 107, 128);
+  padding: 5px 20px;
+  text-transform: uppercase;
+  background-color: Transparent;
+  font-size: 12px;
+  letter-spacing: 3px;
+  align-content: center;
 }
-.prfile_page2{
-  width: 45%;
-  float: right;
+.resume a{
+  text-decoration: none;
 }
