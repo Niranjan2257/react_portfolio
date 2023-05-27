@@ -27,7 +27,7 @@ const Skills = () => {
     <div className="skill" id="skill">
       <div>
         <center>
-          <h2>SKILL</h2>
+          <h2>SKILS</h2>
         </center>
       </div>
       <div className="skill_bar">
