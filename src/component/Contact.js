@@ -8,7 +8,7 @@ export default function Contact() {
     <div classname="contact_window" id="contact_window">
             <div classname="contact_box">
               <img classname="contact_img" src="./image/contact.jpg" alt="contact"/>
-              <a href="javascript:void(0)" classname="closebtn" onclick={closeContact}>×</a>
+              <button classname="closebtn" onclick={closeContact}>×</button>
               <div classname="contact">
                 <h1>CONTACT ME</h1>                
                 <img style="width: 16px;" src="./image/gmail-logo.png" alt="gmail"/>&nbsp;niranjan2257@gmail.com <br/><br/>

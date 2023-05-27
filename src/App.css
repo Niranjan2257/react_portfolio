@@ -34,14 +34,6 @@
 body{
   background-color: rgb(61, 60, 60);
 }
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color:inherit;
-  color: white;
-  padding: 10px 15px;
-  border: none;
- }
  .resume{
   border: 1px solid #0075f6;
   color: rgb(39, 107, 128);
@@ -71,7 +63,7 @@ background-color: rgba(39, 50, 36, 0.549);
 border-radius: 10px;
 padding: 20px;
 margin: 20px;
-color: rgb(97, 156, 203);
+color:  blanchedalmond;
 }
 .skill{
   background-color: rgba(0, 0, 0, 0.499);
@@ -132,4 +124,132 @@ color: rgb(97, 156, 203);
     margin: 20px;
     padding: 20px;
     color: blanchedalmond;
+    overflow: hidden;
 }
+.about_pic{
+  border-radius: 30%;
+  position: relative;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+}
+p {
+  max-height: 200px;
+  overflow: hidden;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a8bac6;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #0b0f4b;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:inherit;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+ }
+
+.openbtn:hover {
+  background-color: #283833;
+}
+
+.contact_window{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2e5465;
+  overflow-x: hidden;
+  transition: 0.2s;
+
+}
+.contact_box{
+  background-color: rgba(0, 0, 0, 0.199);
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+  width: 40% ;     
+  border-radius: 10px;
+  position: relative;
+}
+.contact_img{
+  width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contact_logo{
+  width: 35px;
+}
+.contact{
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #a8bac6;
+ 
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow: hidden;
+  background-color:inherit;
+  display: flex;
+  
+  
+}
+li{
+ 
+  margin: auto;
+}
+.contact_img{
+  width:100%;
+}
+.badge_img{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  }
+.badge_item{
+      background-color: rgba(36, 30, 30, 0.858);
+      align-items: center;
+      color: blanchedalmond;
+      margin: auto ;
+      width: inherit;     
+      border-radius: 10px;
+      padding: 10px;
+      text-decoration: none;
+    }
