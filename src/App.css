@@ -55,3 +55,52 @@ body{
 .resume a{
   text-decoration: none;
 }
+.education{
+  background-color: rgba(0, 0, 0, 0.499);
+  text-align: center;
+  margin: 20px;
+  width: inherit;     
+  border-radius: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+  
+}
+.education_detail{
+background-color: rgba(39, 50, 36, 0.549);
+    
+border-radius: 10px;
+padding: 20px;
+margin: 20px;
+color: rgb(97, 156, 203);
+}
+.skill{
+  background-color: rgba(0, 0, 0, 0.499);
+  align-items: center;
+  margin: 20px;
+  width: inherit;     
+  border-radius: 10px;
+  padding: 20px;
+
+}
+.skill_bar{
+  align-items: center;
+  margin: 20px;
+  width: inherit;     
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill_item{
+  background-color: rgba(36, 30, 30, 0.858);
+  align-items: center;
+  color: blanchedalmond;
+  margin: auto ;
+  width: 100px;     
+  border-radius: 10px;
+  padding: 10px;
+}
+.skill_item img{
+  height: 100px;
+  width: 100px;
+  }
