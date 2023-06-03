@@ -1,14 +1,16 @@
-import React from 'react';
+import React ,{useState} from 'react';
+import Contact from './Contact';
 
+export default function SideBar({closeNav}) {
+  const [showContact, setShowContact] = useState(false);
 
-export default function SideBar() {
-  function openContact() {
-    document.getElementById("contact_window").style.width = "100%";
-  }
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
+  const openContact = () => {
+    setShowContact(true);
+  };
+  const closeContact = () => {
+    setShowContact(false);
+  };
+
     return (
       <div>
         <div id="mySidebar" classname="sidebar">
@@ -18,6 +20,7 @@ export default function SideBar() {
           <a href="#skill">Work</a>
           <a href="./Resume.pdf" download>Resume</a>
           <button onclick={openContact}>Contact</button>
+          {showContact && <Contact hideContact={closeContact}/>}
           
         </div>
       </div>

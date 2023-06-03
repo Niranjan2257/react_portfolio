@@ -1,14 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import profile from './image/profile.jpg'
+import SideBar from './SideBar';
 
 export default function FirstPage() {
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "150px";
-    document.getElementById("main").style.marginLeft = "150px";
-  }
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const openNav = () => {
+    setShowSidebar(true);
+  };
+  const hideNav = () => {
+    setShowSidebar(false);
+  };
+
+
   return (
     <div className="profile_page" id="home">
       <button classname="openbtn" onclick={openNav}>☰</button>
+      {showSidebar && <SideBar closeNav={hideNav}/>}
       <div className='profile'>
         <div className='profile_pic'>
             <img src={profile} className="avatar" alt='profile'/></div>
